@@ -39,14 +39,14 @@ export const PokemonByNamePage: FC<Props> = ({ pokemon }) => {
     <Layout title={pokemon.name}>
       <Grid.Container css={{ marginTop: "5px" }} gap={2}>
         <Grid xs={6} sm={4}>
-          <Card hoverable css={{ padding: "60px" }}>
+          <Card hoverable css={{ margin: "20px 0px" }}>
             <Card.Body>
               <Card.Image
                 src={
                   pokemon.sprites.other?.dream_world?.front_default ||
                   "/no-image.png"
                 }
-                width="100%"
+                width={140}
                 height={140}
                 alt={pokemon.name}
               />
